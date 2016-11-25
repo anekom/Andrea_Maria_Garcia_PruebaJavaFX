@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControlFX">
+   <children>
+      <BorderPane prefHeight="329.0" prefWidth="479.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="My Profile" textFill="TEAL" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="jay R." textFill="TEAL" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="137.0" text="Programmers can design" textFill="#008080b4" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets top="50.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <ImageView fitHeight="114.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@imagenes/profilephoto.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageRaw" fitHeight="75.0" fitWidth="113.0" onMouseClicked="#handleSend" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@imagenes/send.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="40.0" prefWidth="479.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="104.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="310.0" style="-fx-background-color: green;" text="View in GitHub" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust brightness="0.37" />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagenes/github_white.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <ColorAdjust brightness="0.14" contrast="-0.49" hue="0.23" saturation="-0.23" />
+               </effect></AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="25.0" prefWidth="500.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <ColorAdjust brightness="0.14" contrast="-0.49" hue="0.23" saturation="-0.23" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
